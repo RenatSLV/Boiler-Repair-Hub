@@ -16,6 +16,15 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### gazovik-landing (React + Vite, previewPath: /)
+A modern single-page landing website for a gas boiler repair company (ГазСервис).
+- **Tech**: React + Tailwind CSS v4, Framer Motion
+- **Sections**: Hero, About, Services, Why Us, How We Work, Contact Form, Footer
+- **Features**: Floating WhatsApp button, smooth animations, fully responsive, SEO meta tags
+- **Entry**: `artifacts/gazovik-landing/src/pages/Landing.tsx`
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages

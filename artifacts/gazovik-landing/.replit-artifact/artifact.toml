@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Ремонт газовых котлов"
+version = "1.0.0"
+id = "artifacts/gazovik-landing"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19213
+
+[services.development]
+run = "pnpm --filter @workspace/gazovik-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/gazovik-landing", "run", "build" ]
+publicDir = "artifacts/gazovik-landing/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19213"
+BASE_PATH = "/"
