@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 
-const PHONE = "+7 (700) 692-70-04";
-const WHATSAPP_LINK = "https://wa.me/77005057880";
-const ADDRESS = "г. Алматы";
+const PHONE = "+7 (700) 000-00-00";
+const WHATSAPP_LINK = "https://wa.me/7000000000";
+const ADDRESS = "г. Алматы и Алматинская область";
 const HOURS = "Круглосуточно, 24/7";
 
 function useInView(threshold = 0.15) {
@@ -231,25 +231,7 @@ function Hero() {
                 Написать в WhatsApp
               </a>
 
-              <a
-                href="#form"
-                className="orange-btn flex items-center justify-center gap-2 text-white font-semibold px-6 py-4 rounded-xl"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-                Оставить заявку
-              </a>
+              
             </div>
 
             <div className="mt-12 flex flex-wrap gap-6">
